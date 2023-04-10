@@ -1,0 +1,32 @@
+body {
+  @include centerFlex(center);
+}
+
+.card {
+  position: relative;
+
+  &__profile-pic {
+    @include centerBlock;
+    margin-top: -5rem;
+  }
+
+  &__bottom-box {
+    // box goes down
+    position: absolute;
+    bottom: 0;
+
+    // items in the box centered
+    @include centerFlex(center);
+
+    // setting up items in the box
+    &-parent {
+      @include centerFlex(space-between);
+    }
+  }
+}
+
+.text-box {
+  .text-bottom {
+    display: block;
+  }
+}

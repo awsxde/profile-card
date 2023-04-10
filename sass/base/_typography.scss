@@ -1,0 +1,49 @@
+body {
+  background-color: $Dark-cyan;
+  background-image: url(../../images/bg-pattern-top.svg),
+    url(../../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 40vh;
+}
+
+.card {
+  background: $White;
+
+  &__top {
+    background-image: url(../images/bg-pattern-card.svg);
+  }
+
+  &__profile-pic {
+    border: 0.6rem solid $White;
+  }
+
+  &__bottom-box {
+    border-top: 0.1rem solid rgba($Dark-gray, 0.2);
+  }
+}
+
+.text-box {
+  font-size: 1.8rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: $Very-dark-desaturated-blue;
+  text-align: center;
+
+  .text-optional {
+    margin-left: 0.4rem;
+    color: $Dark-gray;
+    font-weight: 400;
+  }
+
+  .text-bottom {
+    color: $Dark-gray;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+
+    &--big {
+      letter-spacing: 0;
+      font-size: 1.4rem;
+    }
+  }
+}

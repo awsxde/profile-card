@@ -1,0 +1,24 @@
+.card {
+  width: 35rem;
+  height: 37.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__top {
+    width: 100%;
+    height: 37%;
+  }
+
+  &__profile-pic {
+    border-radius: 50%;
+  }
+
+  &__bottom-box {
+    width: 100%;
+    height: 23.5%;
+
+    &-parent {
+      width: 70%;
+    }
+  }
+}
